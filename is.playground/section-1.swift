@@ -24,7 +24,7 @@ class _is {
     }
     
     class func array(value: AnyObject) -> Bool{
-        return value is Array
+        return false
     }
     
     class func bool(value: AnyObject) -> Bool{
@@ -32,7 +32,7 @@ class _is {
     }
     
     class func date(value: AnyObject) -> Bool{
-        
+        return false
     }
     
     class func error() {
@@ -58,6 +58,16 @@ class _is {
     class func string(value: AnyObject) -> Bool{
         return value is String
     }
+    
+//date
+    class func inDateRange(start: AnyObject, end: AnyObject, request: AnyObject) -> Bool{
+        return false;
+    }
+    
+    class func notInDateRange(start: AnyObject, end: AnyObject, request: AnyObject) -> Bool{
+        return false;
+    }
+
 }
 
 
